@@ -1,0 +1,48 @@
+.details{
+    padding-left: 175px;
+    margin-top: -50px;
+}
+.logo{
+    margin: 200px;
+}
+.button1:hover{
+    background-color: rgba(255, 255, 255, 0.865)    ;
+}
+.h1{
+    font-size: 70px;
+}
+
+button{ 
+    border: none;
+    height: 45px;
+    width: 300px;
+}
+
+.or{
+    display: inline;
+}
+.box{
+    border: 1px solid grey;
+    text-align: center;
+    width: 140px;
+    height: 0;
+    margin-top: 50px;
+    display: inline-block;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.button2{
+    display: block;
+}
+.button3{
+    background-color: black;
+    border: 1px solid grey;
+}
+.button3:hover{
+        background-color: rgba(66, 215, 248, 0.15);
+}
