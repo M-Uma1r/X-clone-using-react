@@ -5,7 +5,7 @@ export default function SignUpModal() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, setUser] = useState({});
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [ModalOpen, setModalOpen] = useState(true);
 
   function submit(e) {
     e.preventDefault();
@@ -18,10 +18,10 @@ export default function SignUpModal() {
   }
 
   function closeModal() {
-    setIsModalOpen(false);
+    setModalOpen(false);
   }
 
-  if (!isModalOpen) return null; // Do not render the modal if isModalOpen is false
+  if (!ModalOpen) return null; // Do not render the modal if isModalOpen is false
 
   return (
     <div>
