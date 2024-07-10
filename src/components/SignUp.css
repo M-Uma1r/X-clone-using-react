@@ -1,15 +1,25 @@
 .details{
     padding-left: 175px;
     margin-top: -50px;
+    
 }
 .logo{
-    margin: 200px;
+    margin: 150px;
 }
 .button1:hover{
     background-color: rgba(255, 255, 255, 0.865)    ;
 }
 .h1{
+    margin-top: 20px;
+    margin-bottom: -30px;
     font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.h2{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
 button{ 
@@ -17,16 +27,21 @@ button{
     height: 45px;
     width: 300px;
 }
+.p1{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 
 .or{
-    display: inline;
+    display: inline-block;
+    align-content: center;
 }
 .box{
     border: 1px solid grey;
     text-align: center;
     width: 140px;
-    height: 0;
-    margin-top: 50px;
     display: inline-block;
     
 }
@@ -42,7 +57,13 @@ a:hover{
 .button3{
     background-color: black;
     border: 1px solid grey;
+
 }
 .button3:hover{
         background-color: rgba(66, 215, 248, 0.15);
+}
+.small{
+    font-size: 12px;
+    margin-bottom: 2px;
+    margin-left: 10px;
 }
