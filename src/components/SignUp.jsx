@@ -1,6 +1,7 @@
 import React from 'react'
 import SignUplogo from './SignUplogo'
 import './SignUp.css'
+import SignUpModal from './SignUpmodal'
 
 export default function SignUp() {
   return (
@@ -26,6 +27,7 @@ export default function SignUp() {
         <h5>Already have an account?</h5>
         <button className='button3 text-primary rounded-pill'><p className="p1">Sign In</p></button>
       </div>
+      <SignUpModal/>
     </div>
   )
 }
