@@ -5,12 +5,15 @@ export default function SignUpModal() {
   const [element, setElement] = useState(
     <input className="input d-flex" type="text" placeholder="Phone" required />
   );
+
   const [link, setLink] = useState(
-    <a href="..." className="link d-flex" onClick={ChangetoEmail}>
+    <a href="#" className="link d-flex" onClick={ChangetoEmail}>
       Use email instead
     </a>
   );
-  function ChangetoEmail() {
+
+  function ChangetoEmail(e) {
+    e.preventDefault(); // Prevent the default action of the link
     setElement(
       <input
         className="input d-flex"
@@ -20,8 +23,25 @@ export default function SignUpModal() {
       />
     );
     setLink(
-      <a href="..." className="link d-flex" onClick={ChangetoPhone}>
-        Use Phone instead
+      <a href="#" className="link d-flex" onClick={ChangetoPhone}>
+        Use phone instead
+      </a>
+    );
+  }
+
+  function ChangetoPhone(e) {
+    e.preventDefault(); // Prevent the default action of the link
+    setElement(
+      <input
+        className="input d-flex"
+        type="text"
+        placeholder="Phone"
+        required
+      />
+    );
+    setLink(
+      <a href="#" className="link d-flex" onClick={ChangetoEmail}>
+        Use email instead
       </a>
     );
   }
