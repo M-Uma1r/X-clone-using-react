@@ -2,50 +2,32 @@ import React, { useState } from "react";
 import "./Modal.css";
 
 export default function SignUpModal() {
-  const [element, setElement] = useState(
-    <input className="input d-flex" type="text" placeholder="Phone" required />
-  );
-
-  const [link, setLink] = useState(
-    <a href="#" className="link d-flex" onClick={ChangetoEmail}>
-      Use email instead
-    </a>
-  );
+  const [userName, setUserName] = useState(["Ali"]);
+  const [newName, setNewName] = useState("");
+  const [newEmail, setNewEmail] = useState("");
+  const [newPhone, setNewPhone] = useState("");
+  const [email, setEmail] = useState(["Ali@gmail.com"]);
+  const [phone, setPhone] = useState(["03239988877"]);
+  const [useEmail, setUseEmail] = useState(false);
 
   function ChangetoEmail(e) {
     e.preventDefault(); // Prevent the default action of the link
-    setElement(
-      <input
-        className="input d-flex"
-        type="text"
-        placeholder="Email"
-        required
-      />
-    );
-    setLink(
-      <a href="#" className="link d-flex" onClick={ChangetoPhone}>
-        Use phone instead
-      </a>
-    );
+    setUseEmail(true);
   }
 
   function ChangetoPhone(e) {
     e.preventDefault(); // Prevent the default action of the link
-    setElement(
-      <input
-        className="input d-flex"
-        type="text"
-        placeholder="Phone"
-        required
-      />
-    );
-    setLink(
-      <a href="#" className="link d-flex" onClick={ChangetoEmail}>
-        Use email instead
-      </a>
-    );
+    setUseEmail(false);
   }
 
+  function setData() {
+    setUserName((prevUserName) => [...prevUserName, newName]);
+    setEmail((prevEmail) => [...prevEmail, newEmail]);
+    setPhone((prevPhone) => [...prevPhone, newPhone]);
+    console.log(userName);
+    console.log(email);
+    console.log(phone);
+  }
 
   return (
     <div className="modal-container">
@@ -68,9 +50,34 @@ export default function SignUpModal() {
             type="text"
             placeholder="Name"
             required
+            onChange={(e) => setNewName(e.target.value)}
           />
-          {element}
-          {link}
+          {useEmail ? (
+            <input
+              className="input d-flex"
+              type="email"
+              placeholder="Email"
+              required
+              onChange={(e) => setNewEmail(e.target.value)}
+            />
+          ) : (
+            <input
+              className="input d-flex"
+              type="tel"
+              placeholder="Phone"
+              required
+              onChange={(e) => setNewPhone(e.target.value)}
+            />
+          )}
+          {useEmail ? (
+            <a href="#" className="link d-flex" onClick={ChangetoPhone}>
+              Use phone instead
+            </a>
+          ) : (
+            <a href="#" className="link d-flex" onClick={ChangetoEmail}>
+              Use email instead
+            </a>
+          )}
           <h1 className="dob title text-light">Date of birth</h1>
           <p className="title text-grey">
             This will not be shown publicly. Confirm your own age, even if this
@@ -255,7 +262,9 @@ export default function SignUpModal() {
           </div>
         </div>
         <div className="modal-footer">
-          <button className="btn btn-light rounded-pill">Next</button>
+          <button className="btn btn-light rounded-pill" onClick={setData}>
+            Next
+          </button>
         </div>
       </div>
     </div>
