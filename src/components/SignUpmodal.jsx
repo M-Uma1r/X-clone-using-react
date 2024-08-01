@@ -9,14 +9,15 @@ export default function SignUpModal() {
   const [email, setEmail] = useState(["Ali@gmail.com"]);
   const [phone, setPhone] = useState(["03239988877"]);
   const [useEmail, setUseEmail] = useState(false);
+  const [modal , setModal] = useState(true)
 
   function ChangetoEmail(e) {
-    e.preventDefault(); // Prevent the default action of the link
+    e.preventDefault(); 
     setUseEmail(true);
   }
 
   function ChangetoPhone(e) {
-    e.preventDefault(); // Prevent the default action of the link
+    e.preventDefault(); 
     setUseEmail(false);
   }
 
@@ -28,12 +29,16 @@ export default function SignUpModal() {
     console.log(email);
     console.log(phone);
   }
+  function closer(){
+    document.getElementsByClassName("modal-items")[0].style.display = "none";
+    setModal(false)
+  }
 
   return (
     <div className="modal-container">
       <div className="modal-items">
         <div className="modal-header">
-          <p className="close text-light ">&times;</p>
+          <p className="close text-light " onClick={closer}>&times;</p>
           <div className="signup-logo">
             <img
               style={{ height: 50 }}
@@ -262,7 +267,7 @@ export default function SignUpModal() {
           </div>
         </div>
         <div className="modal-footer">
-          <button className="btn btn-light rounded-pill" onClick={setData}>
+          <button className="btn modal-button btn-light rounded-pill" onClick={setData}>
             Next
           </button>
         </div>

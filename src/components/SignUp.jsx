@@ -2,6 +2,7 @@ import React from 'react'
 import SignUplogo from './SignUplogo'
 import './SignUp.css'
 import SignUpModal from './SignUpmodal'
+import SignInmodal from './SignInmodal'
 
 export default function SignUp() {
   return (
@@ -28,6 +29,7 @@ export default function SignUp() {
         <button className='button3 text-primary rounded-pill'><p className="p1">Sign In</p></button>
       </div>
       <SignUpModal/>
+      <SignInmodal/>
     </div>
   )
 }

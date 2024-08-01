@@ -1,5 +1,4 @@
 .modal-container {
-    background-color: white;
     color: black;
     position: fixed;
     left: 0;
@@ -9,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(91, 112, 131, 0.4);
   }
   
   .modal-header,
@@ -21,6 +19,7 @@
   }
   
   .modal-items {
+    display: none;
     background-color: black;
     border-radius: 10px;
     width: 39rem;
@@ -108,7 +107,7 @@
   select {
     display: inline;
   }
-  .btn-light{
+  .modal-button{
     background-color: rgba(255, 255, 255, 0.735);
     width: 450px;
   }
