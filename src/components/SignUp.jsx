@@ -1,7 +1,7 @@
 import React from 'react'
 import SignUplogo from './SignUplogo'
 import './SignUp.css'
-import SignUpModal from './SignUpmodal'
+import SignUpmodal from './SignUpmodal'
 import SignInmodal from './SignInmodal'
 
 export default function SignUp() {
@@ -22,14 +22,12 @@ export default function SignUp() {
         <div className="box"> </div>
         <p className='or'>or</p>
         <div className="box"></div>
-        <button className='button2 btn btn-primary rounded-pill '><p className='p1'>Create account</p></button>
         <p className='small'>By signing up, you agree to the <a href="">Terms of Service</a> and</p>
         <p className='small'><a href="">Privacy Policy</a>, including <a href="">Cookie Use.</a></p><br />
         <h5>Already have an account?</h5>
         <button className='button3 text-primary rounded-pill'><p className="p1">Sign In</p></button>
+        <SignUpmodal/>
       </div>
-      <SignUpModal/>
-      <SignInmodal/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 
-export default function SignUpModal() {
+export default function SignUpmodal() {
   const [userName, setUserName] = useState(["Ali"]);
   const [newName, setNewName] = useState("");
   const [newEmail, setNewEmail] = useState("");
@@ -9,7 +9,7 @@ export default function SignUpModal() {
   const [email, setEmail] = useState(["Ali@gmail.com"]);
   const [phone, setPhone] = useState(["03239988877"]);
   const [useEmail, setUseEmail] = useState(false);
-  const [modal , setModal] = useState(true)
+  const [modal , setModal] = useState(false)
 
   function ChangetoEmail(e) {
     e.preventDefault(); 
@@ -275,3 +275,18 @@ export default function SignUpModal() {
     </div>
   );
 }
+
+
+// export function SignUpbutton() {
+//   function displaySUbutton(){
+//     document.getElementsByClassName("modal-items")[0].style.display = "block";
+//     setModal(true)
+//   }
+//   return (
+//   <button className='button2 btn btn-primary rounded-pill ' onClick={displaySUbutton}>
+//     <p className='p1'>Create account</p>
+//   </button>
+//   )
+// }
+
+

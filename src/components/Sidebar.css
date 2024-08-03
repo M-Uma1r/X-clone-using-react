@@ -1,0 +1,32 @@
+.sidebar{
+    border: 2px solid white;
+    height: 100vh;
+    width: 400px;
+}
+.home-logo{
+    margin-left: 100px;
+}
+.sidebarLinks{
+    margin-left: 100px ;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.fa{
+    margin-right: 20px;
+}
+.sblink{
+    color: white;
+}
+.sblink:hover{
+    color: rgba(255, 255, 255, 0.850);
+    text-decoration: none;
+}
+.sb-button{
+    width: 220px;
+    height: 50px;
+}
+.pfp{
+    width: 50px;
+    height: 50px;
+    display: inline;
+}

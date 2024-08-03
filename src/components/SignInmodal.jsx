@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SignInmodal.css";
 
 export default function SignInmodal() {
+  const [signIn, setSignIn] = useState("")
+  const [ temp , setTemp ] = useState("")
+  func
+  function SetsignIndata(e){
+    e.preventDefault();
+    setSignIn(temp)
+    console.log(signIn)
+  }
   function Signincloser() {
     document.getElementsByClassName("signin-modal-items")[0].style.display =
       "none";
@@ -42,10 +50,10 @@ export default function SignInmodal() {
           <div className="signin-box1" > </div>
           <p className="signin-or text-light">or</p>
           <div className="signin-box2"></div>
-          <input className="signin-email rounded d-block" type="email" placeholder="Phone, email or username" />
+          <input className="signin-email rounded d-block" type="email" placeholder="Phone, email or username" onChange={(e)=>{setTemp(e.target.value)}} />
         </div>
         <div className="signin-modal-footer">
-          <button className="signin-next-btn btn btn-light rounded-pill mt-3">
+          <button className="signin-next-btn btn btn-light rounded-pill mt-3" onClick={SetsignIndata}>
             Next
           </button>
           <button className="signin-fp-btn btn rounded-pill my-3 ">

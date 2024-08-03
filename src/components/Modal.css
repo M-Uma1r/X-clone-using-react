@@ -19,7 +19,7 @@
   }
   
   .modal-items {
-    display: none;
+    display: block;
     background-color: black;
     border-radius: 10px;
     width: 39rem;
@@ -113,5 +113,8 @@
   }
   .signup-logo{
     margin-left: 240px;
+  }
+  .input:focus{
+    border: 1px solid cyan;
   }
   
