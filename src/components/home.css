@@ -1,0 +1,13 @@
+.mid{
+    height: 100vh;
+    width: 400px;
+    display: inline;
+    position: relative;
+    left: 400px;
+    bottom: 749px;
+}
+.mainbox{
+    height: 100%;
+    width: 605px;
+    
+}

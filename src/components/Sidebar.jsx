@@ -16,15 +16,15 @@ export default function Sidebar() {
                 />
             </div>
             <div className="sidebarLinks">
-              <a className='sblink' href=""><i class="fa fa-solid fa-house fa-lg"></i>Home</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-solid fa-magnifying-glass fa-lg"></i>Explore</a><br /> <br />
-              <a className='sblink' href=""><i class="fa fa-regular fa-bell fa-lg"></i>Notificatons</a><br /> <br />
-              <a className='sblink' href=""><i class="fa fa-regular fa-envelope fa-lg"></i>Messages</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-regular fa-bookmark fa-lg"></i>Bookmarks</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-solid fa-user-group fa-lg"></i>Communities</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-brands fa-x-twitter fa-lg"></i>Premium</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-regular fa-user fa-lg"></i>Profile</a><br /><br />
-              <a className='sblink' href=""><i class="fa fa-solid fa-ellipsis fa-lg"></i>More</a><br /><br />
+             <button className = "sb-link-btn"> <a className='sblink' href=""><i class="fa fa-solid fa-house fa-lg"></i>Home</a></button><br /><br />
+              <button className = "sb-link-btn"><a className='sblink' href=""><i class="fa fa-solid fa-magnifying-glass fa-lg"></i>Explore</a></button><br /> <br />
+              <button className = "sb-link-btn"><a className='sblink' href=""><i class="fa fa-regular fa-bell fa-lg"></i>Notificatons</a></button><br /> <br />
+              <button className = "sb-link-btn"><a className='sblink' href=""><i class="fa fa-regular fa-envelope fa-lg"></i>Messages</a></button><br /><br />
+             <button className = "sb-link-btn"> <a className='sblink' href=""><i class="fa fa-regular fa-bookmark fa-lg"></i>Bookmarks</a></button><br /><br />
+             <button className = "sb-link-btn"> <a className='sblink' href=""><i class="fa fa-solid fa-user-group fa-lg"></i>Communities</a></button><br /><br />
+             <button className = "sb-link-btn"> <a className='sblink' href=""><i class="fa fa-brands fa-x-twitter fa-lg"></i>Premium</a></button><br /><br />
+              <button className = "sb-link-btn"><a className='sblink' href=""><i class="fa fa-regular fa-user fa-lg"></i>Profile</a></button><br /><br />
+             <button className = "sb-link-btn"> <a className='sblink' href=""><i class="fa fa-solid fa-ellipsis fa-lg"></i>More</a> </button><br /><br />
               <button className='sb-button btn btn-primary rounded-pill fw-bold'>Post</button><br /><br />
               <img src=".." alt="" className='fa pfp border boerder-1 rounded-pill'/>
               <p className='text-light d-inline'>Your Name</p>

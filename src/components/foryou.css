@@ -1,0 +1,40 @@
+.mid{
+    height: 100vh;
+    width: 400px;
+    display: inline;
+    position: relative;
+    left: 400px;
+    bottom: 749px;
+    border-right: 1px solid grey;
+    
+}
+.foryou{
+    width: 604px;
+    height: 50px;
+    border-right: 1px solid grey;
+}
+.foryou-btn-1,.foryou-btn-2{
+    height: 50px;
+    background-color: black;
+    border-bottom: 1px solid grey ;
+    color: grey;
+    font-weight: bold;
+}
+.foryou-btn-1:hover,.foryou-btn-2:hover{
+    background-color: rgb(48, 47, 47);
+}
+.foryou-btn-1{
+    height: 45px;
+    color: white;
+}
+.under{
+    position: relative;
+    top: 8px;
+    margin: auto;
+    width: 60px;
+    border-radius: 10px;
+    height: 5px;
+    border: 2px solid rgb(52, 182, 253);
+    background-color: rgb(52, 182, 253);
+}
+
